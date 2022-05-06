@@ -11,7 +11,7 @@ const port = 3001;
 mongoose.connect(process.env.DATABASE_URL_CLOUD, { useNewUrlParser: true });
 // Get connection
 const db = mongoose.connection;
-
+// Linea de prueba
 // Set event manager
 db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Conectando a la base de datos..."));
